@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1666822027 source:d:\codeblocks\projects\classes_and_arrays\main.cpp
+	<iostream>
+	<cstdlib>
+	"classes_and_arrays.h"
+
+1666822387 d:\codeblocks\projects\classes_and_arrays\classes_and_arrays.h
+	<iostream>
+	<cstdlib>
+
