@@ -97,22 +97,24 @@ Matrix<N> sub_mats(Matrix<N> a1, Matrix<N> a2){
     return subt;
 }
 
-// multiply two matrices element-wise (?)
+// multiply two matrices
 template <int N>
 Matrix<N> multip_mats(Matrix<N> a1, Matrix<N> a2){
     int const size = a1.SIZE;
     int multip;
-    Matrix<N> mult;
+    Matrix<N> mult; // square matrices
+
     for(int i=0; i < size; i++){
         for(int j=0; j < size; j++){
-            multip = a1.get_data(i, j) * a2.get_data(i, j);
-            mult.set_data(i, j, multip);
+            for(int h = 0; h < size; h++){
+                multip += a1.get_data(i, h)*a2.get_data(h, j);
+                mult.set_data(i, j, multip);
+            }
         }
     }
 
     return mult;
 }
-
 
 /* get cofactor of a matrix
    expanding along row 1 */

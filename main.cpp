@@ -19,21 +19,27 @@ int main()
     for (i = 0; i<sum.SIZE; i++){
         for (j = 0; j<sum.SIZE; j++){
             sum.set_data(i, j, add_mats(mat1, mat2).get_data(i, j));
-            cout << sum.get_data(i, j) << endl;
+            cout << sum.get_data(i, j) << " ";
+            if (j == sum.SIZE-1)
+                cout << endl;
         }
     }
 
     for (i = 0; i<diff.SIZE; i++){
         for (j = 0; j<diff.SIZE; j++){
             diff.set_data(i, j, sub_mats(mat1, mat2).get_data(i, j));
-            cout << diff.get_data(i, j) << endl;
+            cout << diff.get_data(i, j) << " ";
+            if (j == diff.SIZE-1)
+                cout << endl;
         }
     }
 
     for (i = 0; i<multip.SIZE; i++){
         for (j = 0; j<multip.SIZE; j++){
             multip.set_data(i, j, multip_mats(mat1, mat2).get_data(i, j));
-            cout << multip.get_data(i, j) << endl;
+            cout << multip.get_data(i, j) << " ";
+            if (j == multip.SIZE-1)
+                cout << endl;
         }
     }
 
