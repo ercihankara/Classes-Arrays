@@ -1,6 +1,7 @@
 #include <iostream>
 #include <cstdlib>
 #include "classes_and_arrays.h"
+#include "Matrix.h"
 
 using namespace std;
 
