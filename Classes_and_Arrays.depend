@@ -1,21 +1,10 @@
 # depslib dependency file v1.0
-1667548850 source:d:\codeblocks\projects\classes_and_arrays\main.cpp
+1667747507 source:d:\codeblocks\projects\classes_and_arrays\main.cpp
 	<iostream>
 	<cstdlib>
 	"classes_and_arrays.h"
-	"Matrix.h"
 
-1667548958 d:\codeblocks\projects\classes_and_arrays\classes_and_arrays.h
+1667748487 d:\codeblocks\projects\classes_and_arrays\classes_and_arrays.h
 	<iostream>
 	<cstdlib>
-	"Matrix.h"
-
-1667548962 d:\codeblocks\projects\classes_and_arrays\matrix.h
-	<iostream>
-	<cstdlib>
-
-1667548622 source:d:\codeblocks\projects\classes_and_arrays\matrix.cpp
-	<iostream>
-	<cstdlib>
-	"Matrix.h"
 

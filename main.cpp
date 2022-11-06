@@ -1,3 +1,4 @@
+// Ercihan Kara - 2375160
 #include <iostream>
 #include <cstdlib>
 #include "classes_and_arrays.h"
@@ -24,19 +25,25 @@ int main()
 
     mat1.set_data(0, 0, 2);
 
+    cout << "Matrix 1: " << endl;
+    print_matrix(mat1);
+
+    cout << "Matrix 2: " << endl;
+    print_matrix(mat2);
+
     Matrix<3> sum = add_mats(mat1, mat2);
     Matrix<3> diff = sub_mats(mat1, mat2);
     Matrix<3> multip = multip_mats(mat1, mat2);
 
+    cout << "Sum matrix: " << endl;
     print_matrix(sum);
-    cout << endl;
+    cout << "Difference matrix: " << endl;
     print_matrix(diff);
-    cout << endl;
+    cout << "Multiplication matrix: " << endl;
     print_matrix(multip);
-    cout << endl;
 
     det = determinant(mat1, 3);
-    cout << "determinant " << det << endl;
+    cout << "Determinant of Matrix 1: " << det << endl;
 
     return 0;
 }

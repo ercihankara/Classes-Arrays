@@ -1,3 +1,4 @@
+// Ercihan Kara - 2375160
 // helper functions are defined here!
 #include <iostream>
 #include <cstdlib>
@@ -102,15 +103,16 @@ Matrix<N> sub_mats(Matrix<N> a1, Matrix<N> a2){
 template <int N>
 Matrix<N> multip_mats(Matrix<N> a1, Matrix<N> a2){
     int const size = a1.SIZE;
-    int multip;
+    int multip = 0;
     Matrix<N> mult; // square matrices
 
     for(int i=0; i < size; i++){
         for(int j=0; j < size; j++){
             for(int h = 0; h < size; h++){
                 multip += a1.get_data(i, h)*a2.get_data(h, j);
-                mult.set_data(i, j, multip);
             }
+            mult.set_data(i, j, multip);
+            multip = 0;
         }
     }
 
@@ -194,3 +196,4 @@ int determinant(Matrix<N> mat, int size)
    the computation of cofactor process. Therefore, for the CoFactor function,
    call by reference method is used so that changes realized in the function can be felt
    by the determinant function for recursion purposes. */
+
